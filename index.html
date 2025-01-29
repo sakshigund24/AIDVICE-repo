@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDVICE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AIDVICE</h1>
+            <p>Your quick reference for emergency care.</p>
+        </header>
+        <main>
+            <div id="category">
+                <h2>Choose a category:</h2>
+                <button onclick="selectCategory(1)">Injuries</button>
+                <button onclick="selectCategory(2)">Allergies</button>
+                <button onclick="selectCategory(3)">Viral Diseases</button>
+                <button onclick="selectCategory(4)">First Aid Equipment</button>
+            </div>
+            <div id="subCategory" class="hidden"></div>
+            <div id="result" class="hidden"></div>
+            
+            <div id="chatbot">
+                <h2>Chat with our bot:</h2>
+                <div id="chatbox" class="chatbox">
+                    <!-- Messages will be displayed here -->
+                </div>
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Ask me anything about first aid..." autocomplete="off">
+                  <small> <button type="submit">Send</button></small> 
+                </form>
+            </div>
+        
+        </main>
+    <div class="ambulance">
+        
+        <!-- Button to call ambulance with confirmation -->
+       <button onclick="confirmCall()">
+            Call Ambulance
+        </button>
+    </div>
+        <footer>
+            <p>&copy; 2024 First Aid Guide by Aidvice Team</p>
+        </footer>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
